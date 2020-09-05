@@ -1,6 +1,17 @@
 import gql from 'graphql-tag'
 import { FACTORY_ADDRESS, BUNDLE_ID } from '../constants'
 
+export const SUSHI_POOLS = gql`
+  query masterChefPools($first: Int!) {
+    masterChefPools {
+      id
+      balance
+      lpToken
+      allocPoint
+    }
+  }
+`
+
 export const SUBGRAPH_HEALTH = gql`
   query health {
     indexingStatusForCurrentVersion(subgraphName: "ianlapham/uniswapv2") {

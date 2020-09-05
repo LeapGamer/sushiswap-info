@@ -32,3 +32,10 @@ export const blockClient = new ApolloClient({
   }),
   cache: new InMemoryCache()
 })
+
+export const sushiClient = new ApolloClient({
+  link: new HttpLink({
+    uri: 'https://api.thegraph.com/subgraphs/name/zippoxer/sushiswap'
+  }),
+  cache: new InMemoryCache()
+})

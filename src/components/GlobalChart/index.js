@@ -24,7 +24,7 @@ const GlobalChart = ({ display }) => {
   const [chartView, setChartView] = useState(display === 'volume' ? CHART_VIEW.VOLUME : CHART_VIEW.LIQUIDITY)
 
   // time window and window size for chart
-  const timeWindow = timeframeOptions.ALL_TIME
+  const timeWindow = timeframeOptions.MONTH
   const [volumeWindow, setVolumeWindow] = useState(VOLUME_WINDOW.DAYS)
 
   // global historical data
@@ -79,16 +79,16 @@ const GlobalChart = ({ display }) => {
   return chartDataFiltered ? (
     <>
       {below800 && (
-        <DropdownSelect options={CHART_VIEW} active={chartView} setActive={setChartView} color={'#ff007a'} />
+        <DropdownSelect options={CHART_VIEW} active={chartView} setActive={setChartView} color={'#077dff'} />
       )}
 
       {chartDataFiltered && chartView === CHART_VIEW.LIQUIDITY && (
         <ResponsiveContainer aspect={60 / 28} ref={ref}>
           <TradingViewChart
-            data={dailyData}
+            data={chartDataFiltered}
             base={totalLiquidityUSD}
             baseChange={liquidityChangeUSD}
-            title="Liquidity"
+            title="78% of Uniswap Staked"
             field="totalLiquidityUSD"
             width={width}
             type={CHART_TYPES.AREA}

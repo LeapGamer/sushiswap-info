@@ -15,9 +15,9 @@ const theme = (darkMode, color) => ({
   textColor: darkMode ? color : 'black',
 
   panelColor: darkMode ? 'rgba(255, 255, 255, 0)' : 'rgba(255, 255, 255, 0)',
-  backgroundColor: darkMode ? '#212429' : '#F7F8FA',
+  backgroundColor: darkMode ? '#212429' : '#dae4ed',
 
-  uniswapPink: darkMode ? '#ff007a' : 'black',
+  uniswapPink: darkMode ? '#007aFF' : 'black',
 
   concreteGray: darkMode ? '#292C2F' : '#FAFAFA',
   inputBackground: darkMode ? '#1F1F1F' : '#FAFAFA',
@@ -48,19 +48,19 @@ const theme = (darkMode, color) => ({
   divider: darkMode ? 'rgba(43, 43, 43, 0.435)' : 'rgba(43, 43, 43, 0.035)',
 
   //primary colors
-  primary1: darkMode ? '#2172E5' : '#ff007a',
-  primary2: darkMode ? '#3680E7' : '#FF8CC3',
-  primary3: darkMode ? '#4D8FEA' : '#FF99C9',
-  primary4: darkMode ? '#376bad70' : '#F6DDE8',
-  primary5: darkMode ? '#153d6f70' : '#FDEAF1',
+  primary1: darkMode ? '#2172E5' : '#007aFF',
+  primary2: darkMode ? '#3680E7' : '#8ea6d3',
+  primary3: darkMode ? '#4D8FEA' : '#8ea6d3',
+  primary4: darkMode ? '#376bad70' : '#dae4ed',
+  primary5: darkMode ? '#153d6f70' : '#dae4ed',
 
   // color text
-  primaryText1: darkMode ? '#6da8ff' : '#ff007a',
+  primaryText1: darkMode ? '#6da8ff' : '#007aFF',
 
   // secondary colors
-  secondary1: darkMode ? '#2172E5' : '#ff007a',
-  secondary2: darkMode ? '#17000b26' : '#F6DDE8',
-  secondary3: darkMode ? '#17000b26' : '#FDEAF1',
+  secondary1: darkMode ? '#2172E5' : '#007aFF',
+  secondary2: darkMode ? '#17000b26' : '#dae4ed',
+  secondary3: darkMode ? '#17000b26' : '#e8eef5',
 
   shadow1: darkMode ? '#000' : '#2F80ED',
 
@@ -72,7 +72,7 @@ const theme = (darkMode, color) => ({
   link: '#2172E5',
   blue: '2f80ed',
 
-  background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #ff007a30 0%, #fff 0%)`
+  background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #153d6f70 0%, #fff 0%)`
 })
 
 const TextWrapper = styled(Text)`
@@ -145,7 +145,7 @@ export const ThemedBackground = styled.div`
   height: 200vh;
   mix-blend-mode: color;
   background: ${({ backgroundColor }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${backgroundColor} 0%, rgba(255, 255, 255, 0) 100%)`};
+    `radial-gradient(50% 50% at 50% 50%, #dae4ed 0%, rgba(255, 255, 255, 0) 100%)`};
   position: absolute;
   top: 0px;
   left: 0px;

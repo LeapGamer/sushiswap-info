@@ -164,27 +164,22 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
+              <Link href="https://Sushiswap.org" target="_blank">
+                Sushiswap.org
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://v1.uniswap.info" target="_blank">
-                V1 Analytics
+              <Link href="https://medium.com/sushiswap/the-sushiswap-project-c4049ea9941e" target="_blank">
+                Project
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://uniswap.org/docs/v2" target="_blank">
-                Docs
-              </Link>
-            </HeaderText>
-            <HeaderText>
-              <Link href="https://discord.com/invite/XErMcTq" target="_blank">
+              <Link href="https://discord.gg/926Hyv" target="_blank">
                 Discord
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://twitter.com/NomiChef/" target="_blank">
                 Twitter
               </Link>
             </HeaderText>
